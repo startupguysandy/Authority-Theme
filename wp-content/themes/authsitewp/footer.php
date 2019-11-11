@@ -19,15 +19,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="<?php echo esc_attr( $container ); ?>">
 
-		<div class="row">
+		<div class="row justify-content-center">
 
-			<div class="col-md-12">
+			<div class="col-md-10">
 
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
 
-						<?php understrap_site_info(); ?>
+                        Crafted with ❤️ by <?php echo get_bloginfo( 'name' ); ?> © All rights reserved
 
 					</div><!-- .site-info -->
 

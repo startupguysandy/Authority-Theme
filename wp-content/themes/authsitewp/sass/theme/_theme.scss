@@ -4,22 +4,35 @@ body {
   color: $primary;
 }
 
-.homepage-hero-banner {
-  background-image: url("https://authoritysite.dev/wp-content/uploads/2019/11/hero-banner.jpg");
+.hero-banner {
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url("https://authoritysite.dev/wp-content/uploads/2019/11/hero-banner.jpg");
   background-size: cover;
   background-position: 30.87557603686636% 36.0655737704918%;
 }
 
-.homepage-hero-info {
-  padding: 200px 0 240px;
+.hero-info {
   color: $color3;
   text-align: center;
+  padding: 100px 0 120px;
+  &.homepage {
+    @extend .hero-info;
+    padding: 200px 0 240px !important;
+  }
   h1 {
     font-size: $font-size-base * 3;
   }
   span.hero-description {
     font-size: $font-size-base * 1.2;
   }
+}
+
+// Archive Styling
+.archive-card-style {
+  background-color: #fff;
+  clear: both;
+  margin: 0 0 35px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, .08);
+  overflow: hidden;
 }
 
 @include media-breakpoint-down(lg) {

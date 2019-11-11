@@ -24,30 +24,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
+            <?php if ( is_front_page() ) : ?>   <!-- Check if we're on the front page -->
+                <?php get_template_part( 'loop-templates/content', 'homepage' ); ?>
+            <?php else: ?>                      <!-- Otherwise we're on a regular page -->
+                <!-- Do the left sidebar check -->
+                <?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+                <main class="site-main" id="main">
+                        <?php while ( have_posts() ) : the_post(); ?>
+                            <?php get_template_part( 'loop-templates/content', 'page' ); ?>
+                        <?php endwhile; // end of the loop. ?>
+                </main><!-- #main -->
 
-			<main class="site-main" id="main">
-
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php get_template_part( 'loop-templates/content', 'page' ); ?>
-
-					<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-					?>
-
-				<?php endwhile; // end of the loop. ?>
-
-			</main><!-- #main -->
-
-			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
-
+                <!-- Do the right sidebar check -->
+                <?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
+            <?php endif; ?>
 		</div><!-- .row -->
 
 	</div><!-- #content -->

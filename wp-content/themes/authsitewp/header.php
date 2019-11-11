@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="site" id="page">
 
     <!-- ******************* The Hero Banner Container ******************* -->
-    <div class="wrapper homepage-hero-banner has-background-dim-20 has-background-dim" id="wrapper-hero" itemscope itemtype="http://schema.org/WebSite" style="background-image:url(https://authoritysite.dev/wp-content/uploads/2019/11/hero-banner.jpg);background-position:30.87557603686636% 36.0655737704918%">
+    <div class="wrapper homepage-hero-banner has-background-dim-20 has-background-dim" id="wrapper-hero" itemscope itemtype="http://schema.org/WebSite">
 
 	    <!-- ******************* The Navbar Area ******************* -->
         <div class="container" id="wrapper-navbar">
@@ -73,7 +73,8 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="container homepage-hero-info id="wrapper-hero-info">
             <div class="row justify-content-center">
                 <div class="col-md-10">
-                    <h1 class="text-center">This Is The Heading</h1>
+                    <h1>This Is The Heading</h1>
+                    <span class="hero-description">This is the strapline describing the website</span>
                 </div>
             </div>
         </div>

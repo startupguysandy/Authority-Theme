@@ -25,10 +25,10 @@ defined( 'ABSPATH' ) || exit;
 	                                    <?php if (has_post_thumbnail() ) : ?>
                                             <div class="col-md-12 post-thumbnail-wrap">
                                                 <a href="<?php echo get_permalink(); ?>">
-                                                    <div class="post-thumbnail" style="background-image: url('<?php echo wp_get_attachment_url(get_post_thumbnail_id(get_the_ID())); ?>')"></div>
+                                                    <div class="post-thumbnail" style="background-image: url('<?php echo the_post_thumbnail_url('large'); ?>')"></div>
                                                 </a>
                                             </div>
-                                        <?php endif; ?>
+                                        <?php endif; ?><!-- end post featured image -->
 
                                         <div class="col-md-12">
                                             <div class="blog-feed-content">

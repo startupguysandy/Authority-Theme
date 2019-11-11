@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 <div class="container">
     <div class="row">
             <!-- start #primary -->
-            <div class="col-md-6 offset-md-1 content-area" id="primary">
+            <div class="col-lg-6 offset-lg-1 content-area" id="primary">
                 <main class="site-main" id="main">
                         <?php $the_query = new WP_Query( array( // the query
                             'posts_per_page' => 3,
@@ -59,14 +59,8 @@ defined( 'ABSPATH' ) || exit;
             </div><!-- closing #primary -->
 
             <!-- start #right-sidebar -->
-            <div class="col-md-4 widget-area" id="right-sidebar" role="complementary">
-                <aside id="recent-posts-2" class="widget widget_recent_entries">
-                    <h3 class="widget-title">Recent Posts</h3>		<ul>
-                        <li>
-                            <a href="https://authoritysite.dev/uncategorized/hello-world">Hello world!</a>
-                        </li>
-                    </ul>
-                </aside>
+            <div class="col-lg-4" id="right-sidebar">
+                
             </div><!-- #right-sidebar -->
     </div><!-- close .row -->
 </div><!-- close .container -->

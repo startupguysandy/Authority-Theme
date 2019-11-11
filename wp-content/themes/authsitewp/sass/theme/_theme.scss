@@ -4,6 +4,19 @@ body {
   color: $primary;
 }
 
+.home {
+  #primary, #secondary {
+    margin-top: -120px;
+  }
+  .post-content {
+    background-color: #fff;
+    clear: both;
+    margin: 0 0 35px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, .08);
+    overflow: hidden;
+  }
+}
+
 .hero-banner {
   background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url("https://authoritysite.dev/wp-content/uploads/2019/11/hero-banner.jpg");
   background-size: cover;
@@ -34,6 +47,62 @@ body {
   box-shadow: 0 2px 25px rgba(0, 0, 0, .08);
   overflow: hidden;
 }
+
+.post-thumbnail-wrap {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.post-thumbnail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.blog-feed-content {
+  padding: 20px;
+}
+
+.entry-content, .entry-footer, .entry-header, .entry-meta, .entry-summary, .entry-title {
+  width: 100%;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.entry-content, .entry-summary {
+  color: #424242;
+}
+
+.entry-header {
+  padding-bottom: 8px;
+  text-align: center;
+  h2.entry-title {
+    line-height: 150%;
+    margin: 0 0 5px;
+  }
+}
+
+.entry-meta, .entry-meta a {
+  color: #727272;
+  clear: both;
+  font-weight: 300;
+}
+
+h5.entry-date, h5.entry-date a {
+  color: #afafaf;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 3px 0 8px;
+}
+
 
 @include media-breakpoint-down(lg) {
   .homepage-hero-info {

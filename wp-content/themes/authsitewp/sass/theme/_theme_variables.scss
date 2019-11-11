@@ -2,6 +2,29 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
 
-$primary-background: rgba(252,252,252,1.00);
+$color1: rgba(74, 64, 99, 1);
+$color2: rgba(191, 172, 200, 1);
+$color3: rgba(200, 198, 215, 1);
+$color4: rgba(120, 63, 142, 1);
+$color5: rgba(79, 18, 113, 1);
 
-$primary: #5533ff; // Thats a sample how you could change a BootStrap variable.
+$website-background: rgba(252,252,252,1.00);
+
+$primary: $color1; // Thats a sample how you could change a BootStrap variable.
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1140px,
+        xxl: 1440px
+) !default;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1380px
+) !default;

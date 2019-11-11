@@ -1,4 +1,9 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 body {
-  background-color: $primary-background;
+  background-color: $website-background;
+  color: $primary;
+}
+
+.homepage-hero-banner {
+  background-color: $primary;
 }

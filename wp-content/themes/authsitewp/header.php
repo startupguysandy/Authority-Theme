@@ -26,20 +26,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="site" id="page">
 
     <!-- ******************* The Hero Banner Container ******************* -->
-    <div class="wrapper homepage-hero-banner" id="wrapper-hero" itemscope itemtype="http://schema.org/WebSite">
+    <div class="wrapper homepage-hero-banner has-background-dim-20 has-background-dim" id="wrapper-hero" itemscope itemtype="http://schema.org/WebSite" style="background-image:url(https://authoritysite.dev/wp-content/uploads/2019/11/hero-banner.jpg);background-position:30.87557603686636% 36.0655737704918%">
 
 	    <!-- ******************* The Navbar Area ******************* -->
         <div class="container" id="wrapper-navbar">
             <div class="row justify-content-center">
                 <div class="col-md-10">
-
-                    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-
-                        <!-- .container starts -->
-		                <?php if ( 'container' == $container ) : ?>
-                            <div class="container">
-                        <?php endif; ?>
-
+                    <nav class="navbar navbar-dark navbar-expand-md px-0">
                             <!-- Your site title as branding in the menu -->
                             <!-- start custom logo -->
                             <?php if ( ! has_custom_logo() ) { ?>
@@ -71,21 +64,23 @@ $container = get_theme_mod( 'understrap_container_type' );
                                         'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
                                     )
                                 ); ?>
-
-			                <?php if ( 'container' == $container ) : ?>
-                                </div>
-                            <?php endif; ?>
-                            <!-- .container ends -->
-
                     </nav><!-- .site-navigation -->
                 </div>
             </div>
-
         </div><!-- #wrapper-navbar end -->
 
-        <!-- ******************* The Hero Info ******************* -->
-        
+        <!-- ******************* The Hero Info Area ******************* -->
+        <div class="container homepage-hero-info id="wrapper-hero-info">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <h1 class="text-center">This Is The Heading</h1>
+                </div>
+            </div>
+        </div>
 
-        <!-- #hero-info end -->
+<!--        <div class="wp-block-cover has-background-dim-20 has-background-dim" style="background-image:url(https://authoritysite.dev/wp-content/uploads/2019/11/hero-banner.jpg);background-position:30.87557603686636% 36.0655737704918%"><div class="wp-block-cover__inner-container">-->
+<!--            <h2 style="text-align:center">Learning How To Stream</h2>-->
+<!--        </div></div>-->
+        <!-- #wrapper-hero-info end -->
 
 	</div><!-- #wrapper-hero end -->

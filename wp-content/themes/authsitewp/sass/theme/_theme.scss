@@ -5,5 +5,19 @@ body {
 }
 
 .homepage-hero-banner {
-  background-color: $primary;
+  //background-image: url("https://authoritysite.dev/wp-content/uploads/2019/11/hero-banner.jpg");
+}
+
+.homepage-hero-info {
+  padding: 150px 0 180px;
+  h1 {
+    color: $color3;
+    font-size: $font-size-base * 3;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .homepage-hero-info {
+    padding: 100px 0 120px;
+  }
 }

@@ -13,6 +13,9 @@ $website-background: rgba(243,243,243,1.00);
 $primary: $color1; // Thats a sample how you could change a BootStrap variable.
 $secondary: $color2;
 
+$default-border-radius: 4px;
+$default-box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+
 $grid-breakpoints: (
         xs: 0,
         sm: 576px,

@@ -60,7 +60,15 @@ defined( 'ABSPATH' ) || exit;
 
             <!-- start #right-sidebar -->
             <div class="col-lg-4" id="right-sidebar">
-                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="advert-wrapper">
+                            <i class="fab fa-grav"></i>
+                            <h3>Spread The Word</h3>
+                            <span>We have an impact across the globe with content that people really love and relate to. If you enjoy your time here feel free to spread the word, it makes a huge difference!</span>
+                        </div>
+                    </div>
+                </div>
             </div><!-- #right-sidebar -->
     </div><!-- close .row -->
 </div><!-- close .container -->

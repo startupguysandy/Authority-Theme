@@ -4,17 +4,21 @@ body {
   color: $primary;
 }
 
+.card-style {
+  @include border-radius($default-border-radius);
+  clear: both;
+  margin: 0 0 35px;
+  box-shadow: $default-box-shadow;
+  overflow: hidden;
+}
+
 .home {
   #primary, #secondary {
     margin-top: -120px;
   }
   .post-content {
-    @include border-radius(4px);
+    @extend .card-style;
     background-color: #fff;
-    clear: both;
-    margin: 0 0 35px;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
-    overflow: hidden;
   }
 }
 
@@ -40,15 +44,7 @@ body {
   }
 }
 
-// Archive Styling
-.archive-card-style {
-  background-color: #fff;
-  clear: both;
-  margin: 0 0 35px;
-  box-shadow: 0 2px 25px rgba(0, 0, 0, .08);
-  overflow: hidden;
-}
-
+// Homepage Content Styling
 .post-thumbnail-wrap {
   position: relative;
   min-height: 300px;

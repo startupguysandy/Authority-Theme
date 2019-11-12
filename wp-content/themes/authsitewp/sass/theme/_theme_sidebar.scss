@@ -1,0 +1,20 @@
+@import "theme_mixins";
+
+.advert-wrapper {
+  @extend .card-style;
+  background: linear-gradient(150deg, $color4, darken( $color4, 20%));
+  padding: 24% 10%;
+  text-align: center;
+  color: $color3;
+  i {
+    font-size: 8rem;
+    margin-bottom: 60px;
+  }
+  h3 {
+    line-height: 260%;
+  }
+  span {
+    font-size: 1.1rem;
+    line-height: 160%;
+  }
+}

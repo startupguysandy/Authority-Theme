@@ -4,6 +4,34 @@ body {
   color: $primary;
 }
 
+.custom-logo-link {
+  max-width: 300px;
+}
+
+.hero-banner {
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url("https://authoritysite.dev/wp-content/uploads/2019/11/hero-banner.jpg");
+  background-size: cover;
+  background-position: 30.87557603686636% 36.0655737704918%;
+}
+
+.hero-info {
+  color: $color3;
+  text-align: center;
+  padding: 60px 0 80px;
+  &.homepage {
+    @extend .hero-info;
+    padding: 160px 0 280px !important;
+  }
+  h1 {
+    font-size: $font-size-base * 3;
+  }
+  span.hero-description {
+    font-size: $font-size-base * 0.85;
+  }
+}
+
+// Homepage Content Styling
+
 .card-style {
   @include border-radius($default-border-radius);
   clear: both;
@@ -22,29 +50,6 @@ body {
   }
 }
 
-.hero-banner {
-  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url("https://authoritysite.dev/wp-content/uploads/2019/11/hero-banner.jpg");
-  background-size: cover;
-  background-position: 30.87557603686636% 36.0655737704918%;
-}
-
-.hero-info {
-  color: $color3;
-  text-align: center;
-  padding: 100px 0 120px;
-  &.homepage {
-    @extend .hero-info;
-    padding: 200px 0 240px !important;
-  }
-  h1 {
-    font-size: $font-size-base * 3;
-  }
-  span.hero-description {
-    font-size: $font-size-base * 1.2;
-  }
-}
-
-// Homepage Content Styling
 .post-thumbnail-wrap {
   position: relative;
   min-height: 300px;
